@@ -1,18 +1,19 @@
 import { motion } from "framer-motion";
+import { DollarSign, RefreshCw, TrendingDown } from "lucide-react";
 
 const pains = [
   {
-    icon: "💸",
+    icon: DollarSign,
     title: "Perdés clientes por no responder a tiempo",
     desc: "Tu equipo no da abasto y los leads se enfrían antes de que puedas atenderlos.",
   },
   {
-    icon: "🔁",
+    icon: RefreshCw,
     title: "Tareas repetitivas que consumen horas de tu día",
     desc: "Seguimiento manual, respuestas básicas, reportes… todo te roba tiempo que podrías usar para cerrar ventas.",
   },
   {
-    icon: "📉",
+    icon: TrendingDown,
     title: "Invertís en publicidad pero los resultados no escalan",
     desc: "Sin un sistema de automatización detrás, el tráfico que comprás no convierte.",
   },
@@ -37,11 +38,11 @@ const PainPoints = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.15 }}
-            className="glass-card glass-card-hover rounded-xl p-8 transition-all duration-400"
+            className="glass-card glass-card-hover rounded-xl p-8 transition-all duration-300"
           >
-            <div className="text-4xl mb-4">{p.icon}</div>
-            <h3 className="text-lg font-semibold mb-3">{p.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+            <p.icon className="w-10 h-10 mb-4" style={{ color: "#2563eb" }} />
+            <h3 className="text-lg font-semibold mb-3" style={{ color: "#f8fafc" }}>{p.title}</h3>
+            <p className="text-sm leading-relaxed" style={{ color: "#94a3b8" }}>{p.desc}</p>
           </motion.div>
         ))}
       </div>

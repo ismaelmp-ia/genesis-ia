@@ -52,10 +52,10 @@ const Faq = () => (
               value={`faq-${i}`}
               className="glass-card rounded-xl px-6 border-none"
             >
-              <AccordionTrigger className="text-left font-medium hover:no-underline py-5">
+              <AccordionTrigger className="text-left font-medium hover:no-underline py-5" style={{ color: "#f8fafc" }}>
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-5">
+              <AccordionContent className="pb-5" style={{ color: "#94a3b8" }}>
                 {f.a}
               </AccordionContent>
             </AccordionItem>

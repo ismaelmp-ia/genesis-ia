@@ -1,21 +1,24 @@
-const WHATSAPP_LINK = "https://wa.me/346819118256";
+import { Phone } from "lucide-react";
+import genesisLogo from "@/assets/genesis-logo.png";
 
 const Footer = () => (
-  <footer className="border-t border-border py-12 px-4">
+  <footer className="py-12 px-4" style={{ borderTop: "1px solid rgba(37, 99, 235, 0.2)" }}>
     <div className="container mx-auto text-center">
-      <a href="#" className="text-xl font-bold gradient-text">GÉNESIS</a>
-      <p className="text-muted-foreground text-sm mt-2 mb-6">
-        Más clientes. Menos esfuerzo. Con inteligencia artificial.
+      <img src={genesisLogo} alt="Génesis" className="h-10 mx-auto mb-4" />
+      <p className="text-sm mb-6" style={{ color: "#94a3b8" }}>
+        Inteligencia artificial para negocios que quieren crecer.
       </p>
-      <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground mb-8">
-        <a href="mailto:ismaelm.p@icloud.com" className="hover:text-foreground transition-colors">
-          ismaelm.p@icloud.com
-        </a>
-        <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
-          WhatsApp
-        </a>
-      </div>
-      <p className="text-muted-foreground text-xs">© 2025 GÉNESIS. Todos los derechos reservados.</p>
+      <a
+        href="tel:+34681918256"
+        className="inline-flex items-center gap-2 text-sm hover:opacity-80 transition-opacity mb-8"
+        style={{ color: "#94a3b8" }}
+      >
+        <Phone className="w-4 h-4" />
+        +34 681 918 256
+      </a>
+      <p className="text-xs" style={{ color: "#94a3b8" }}>
+        © 2025 Génesis IA. Todos los derechos reservados.
+      </p>
     </div>
   </footer>
 );

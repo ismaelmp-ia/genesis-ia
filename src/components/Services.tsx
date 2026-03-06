@@ -1,23 +1,24 @@
 import { motion } from "framer-motion";
+import { Bot, Zap, Megaphone, BarChart3 } from "lucide-react";
 
 const services = [
   {
-    icon: "🤖",
+    icon: Bot,
     title: "Agentes de IA",
     desc: "Chatbots inteligentes que atienden, califican y cierran clientes 24/7 en WhatsApp, web y redes sociales.",
   },
   {
-    icon: "⚡",
+    icon: Zap,
     title: "Automatizaciones",
     desc: "Conectamos tus herramientas y creamos flujos automáticos que trabajan mientras vos dormís.",
   },
   {
-    icon: "📣",
+    icon: Megaphone,
     title: "Marketing Digital",
     desc: "Campañas de Meta Ads y Google Ads optimizadas con IA para captar leads de calidad.",
   },
   {
-    icon: "📊",
+    icon: BarChart3,
     title: "Sistemas de Ventas",
     desc: "CRM, seguimiento automático y pipelines diseñados para cerrar más en menos tiempo.",
   },
@@ -42,11 +43,11 @@ const Services = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="glass-card gradient-border rounded-xl p-8 transition-all duration-400"
+            className="glass-card glass-card-hover rounded-xl p-8 transition-all duration-300"
           >
-            <div className="text-4xl mb-4">{s.icon}</div>
-            <h3 className="text-lg font-semibold mb-3">{s.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+            <s.icon className="w-10 h-10 mb-4" style={{ color: "#2563eb" }} />
+            <h3 className="text-lg font-semibold mb-3" style={{ color: "#f8fafc" }}>{s.title}</h3>
+            <p className="text-sm leading-relaxed" style={{ color: "#94a3b8" }}>{s.desc}</p>
           </motion.div>
         ))}
       </div>
