@@ -32,7 +32,7 @@ const VideoSection = () => (
       >
         <iframe
           className="w-full aspect-[9/16] max-h-[600px] bg-black mx-auto"
-          src="https://www.youtube.com/embed/qgKbns29ngM"
+          src="https://www.youtube.com/embed/A28hpDj-kEo"
           title="Génesis en acción"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
