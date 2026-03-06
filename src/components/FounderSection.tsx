@@ -42,7 +42,7 @@ const FounderSection = () => (
             FUNDADOR
           </p>
           <h2 className="text-4xl md:text-5xl font-[800] mb-2" style={{ color: "#f8fafc" }}>
-            Ismael
+            Ismael Muñoz
           </h2>
           <p className="text-lg mb-6" style={{ color: "#94a3b8" }}>
             Especialista en IA &amp; Marketing Digital
