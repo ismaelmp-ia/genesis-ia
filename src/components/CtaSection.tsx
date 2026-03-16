@@ -8,8 +8,7 @@ import { z } from "zod";
 const FORMSPARK_URL = "https://submit-form.com/W59rk0Uuv";
 
 const contactSchema = z.object({
-  first_name: z.string().trim().min(1, "El nombre es obligatorio").max(100),
-  last_name: z.string().trim().min(1, "El apellido es obligatorio").max(100),
+  full_name: z.string().trim().min(1, "El nombre es obligatorio").max(200),
   email: z.string().trim().email("Email inválido").max(255),
   phone: z.string().trim().min(1, "El teléfono es obligatorio").max(30),
   message: z.string().trim().min(1, "El mensaje es obligatorio").max(1000),
