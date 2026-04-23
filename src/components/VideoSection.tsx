@@ -30,8 +30,9 @@ const VideoSection = () => (
           boxShadow: "0 0 40px rgba(37, 99, 235, 0.3)",
         }}
       >
+        {/* Fix: aspect-video = 16:9, correcto para desktop */}
         <iframe
-          className="w-full aspect-[9/16] max-h-[600px] bg-black mx-auto"
+          className="w-full aspect-video bg-black"
           src="https://www.youtube.com/embed/A28hpDj-kEo"
           title="Génesis en acción"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -30,7 +30,7 @@ const faqs = [
 ];
 
 const Faq = () => (
-  <section className="py-24 px-4">
+  <section id="faq" className="py-24 px-4">
     <div className="container mx-auto max-w-3xl">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,10 @@ const Faq = () => (
               value={`faq-${i}`}
               className="glass-card rounded-xl px-6 border-none"
             >
-              <AccordionTrigger className="text-left font-medium hover:no-underline py-5" style={{ color: "#f8fafc" }}>
+              <AccordionTrigger
+                className="text-left font-medium hover:no-underline py-5"
+                style={{ color: "#f8fafc" }}
+              >
                 {f.q}
               </AccordionTrigger>
               <AccordionContent className="pb-5" style={{ color: "#94a3b8" }}>

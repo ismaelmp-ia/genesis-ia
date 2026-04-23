@@ -4,11 +4,11 @@ import { Clock, TrendingUp, BadgeDollarSign } from "lucide-react";
 const stats = [
   { icon: Clock, value: "-70%", unit: "tiempo", label: "en atención al cliente" },
   { icon: TrendingUp, value: "3x", unit: "más leads", label: "calificados por mes" },
-  { icon: BadgeDollarSign, value: "ROI", unit: "positivo", label: "desde el primer mes" },
+  { icon: BadgeDollarSign, value: "2.4x", unit: "ROI promedio", label: "en los primeros 30 días" },
 ];
 
 const Results = () => (
-  <section className="py-24 px-4">
+  <section id="resultados" className="py-24 px-4">
     <div className="container mx-auto">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

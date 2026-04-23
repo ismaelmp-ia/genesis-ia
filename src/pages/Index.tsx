@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import FounderSection from "@/components/FounderSection";
 import Results from "@/components/Results";
+import Testimonials from "@/components/Testimonials";
 import CtaSection from "@/components/CtaSection";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
@@ -16,17 +17,19 @@ const Index = () => (
     <Navbar />
     <Hero />
     <SectionDivider />
-    <VideoSection />
-    <SectionDivider />
     <PainPoints />
     <SectionDivider />
     <Services />
     <SectionDivider />
     <HowItWorks />
     <SectionDivider />
-    <FounderSection />
-    <SectionDivider />
     <Results />
+    <SectionDivider />
+    <Testimonials />
+    <SectionDivider />
+    <VideoSection />
+    <SectionDivider />
+    <FounderSection />
     <SectionDivider />
     <CtaSection />
     <SectionDivider />

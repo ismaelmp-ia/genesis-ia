@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
           style={{
             background: "rgba(37, 99, 235, 0.1)",
             border: "1px solid rgba(37, 99, 235, 0.3)",
-            color: "#94a3b8",
+            color: "#60a5fa",
           }}
         >
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -53,19 +52,27 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col items-center gap-4"
         >
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase tracking-wide text-sm px-8 rounded-md gap-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] transition-all">
-            <a href="#contacto">
-              Contactar ahora
-            </a>
+          {/* Primary CTA — único botón dominante */}
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase tracking-wide text-sm px-10 rounded-md gap-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] transition-all"
+          >
+            <a href="#contacto">Agendá tu diagnóstico gratis →</a>
           </Button>
-          <Button asChild variant="outline" size="lg" className="font-bold uppercase tracking-wide text-sm px-8 rounded-md gap-2" style={{ borderColor: "rgba(37, 99, 235, 0.3)", color: "#f8fafc" }}>
-            <a href="#servicios">
-              <ArrowDown className="w-4 h-4" />
-              Ver servicios
-            </a>
-          </Button>
+
+          {/* Secundario: link de texto, sin competir con el CTA */}
+          <a
+            href="#servicios"
+            className="text-sm transition-colors"
+            style={{ color: "#475569", textDecoration: "underline", textUnderlineOffset: "4px" }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#94a3b8")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#475569")}
+          >
+            Ver qué hacemos
+          </a>
         </motion.div>
       </div>
     </section>

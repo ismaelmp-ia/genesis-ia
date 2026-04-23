@@ -19,7 +19,7 @@ const steps = [
 ];
 
 const HowItWorks = () => (
-  <section className="py-24 px-4">
+  <section id="proceso" className="py-24 px-4">
     <div className="container mx-auto">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
