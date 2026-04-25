@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
-const FORMSPARK_URL = "https://submit-form.com/W59rk0Uuv";
+const WEBHOOK_URL = "https://hook.eu2.make.com/a11rehnymglrbgos9githhg8ouixunnr";
 
 const contactSchema = z.object({
   full_name: z.string().trim().min(1, "El nombre es obligatorio").max(200),
@@ -40,7 +40,7 @@ const CtaSection = () => {
 
     setLoading(true);
     try {
-      const res = await fetch(FORMSPARK_URL, {
+      const res = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(result.data),
