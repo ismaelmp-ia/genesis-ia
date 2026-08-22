@@ -4,7 +4,7 @@ import { DollarSign, RefreshCw, TrendingDown } from "lucide-react";
 const pains = [
   {
     icon: DollarSign,
-    title: "Perdés clientes por no responder a tiempo",
+    title: "Pierdes clientes por no responder a tiempo",
     desc: "Tu equipo no da abasto y los leads se enfrían antes de que puedas atenderlos.",
   },
   {
@@ -14,8 +14,8 @@ const pains = [
   },
   {
     icon: TrendingDown,
-    title: "Invertís en publicidad pero los resultados no escalan",
-    desc: "Sin un sistema de automatización detrás, el tráfico que comprás no convierte.",
+    title: "Inviertes en publicidad pero los resultados no escalan",
+    desc: "Sin un sistema de automatización detrás, el tráfico que compras no convierte.",
   },
 ];
 
@@ -28,7 +28,7 @@ const PainPoints = () => (
         viewport={{ once: true }}
         className="text-3xl md:text-4xl font-bold text-center mb-16"
       >
-        <span className="gradient-text">¿Te identificás?</span>
+        <span className="gradient-text">¿Te identificas?</span>
       </motion.h2>
       <div className="grid md:grid-cols-3 gap-6">
         {pains.map((p, i) => (

@@ -60,7 +60,7 @@ const Hero = () => {
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase tracking-wide text-sm px-10 rounded-md gap-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] transition-all"
           >
-            <a href="#contacto">Agendá tu diagnóstico gratis →</a>
+            <a href="#contacto">Agenda tu diagnóstico gratis →</a>
           </Button>
 
           {/* Secundario: link de texto, sin competir con el CTA */}

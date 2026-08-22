@@ -13,7 +13,7 @@ const steps = [
   },
   {
     num: "03",
-    title: "Escalás sin límites",
+    title: "Escalas sin límites",
     desc: "Tu negocio funciona en piloto automático. Más clientes, menos fricción, mejores resultados.",
   },
 ];
