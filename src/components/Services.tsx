@@ -10,7 +10,7 @@ const services = [
   {
     icon: Zap,
     title: "Automatizaciones",
-    desc: "Conectamos tus herramientas y creamos flujos automáticos que trabajan mientras vos dormís.",
+    desc: "Conectamos tus herramientas y creamos flujos automáticos que trabajan mientras tú duermes.",
   },
   {
     icon: Megaphone,

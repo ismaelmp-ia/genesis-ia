@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "¿Necesito conocimientos técnicos para usar lo que implementan?",
-    a: "No. Nosotros nos encargamos de todo. Vos solo usás los resultados.",
+    a: "No. Nosotros nos encargamos de todo. Tú solo usas los resultados.",
   },
   {
     q: "¿Cuánto tiempo tarda la implementación?",

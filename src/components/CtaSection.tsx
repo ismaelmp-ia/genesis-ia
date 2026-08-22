@@ -72,7 +72,7 @@ const CtaSection = () => {
             ¿Listo para <span className="gradient-text">automatizar tu negocio</span>?
           </h2>
           <p className="text-lg mb-8 max-w-xl mx-auto text-muted-foreground">
-            Completá el formulario y te contactamos en menos de 24 horas.
+            Completa el formulario y te contactamos en menos de 24 horas.
           </p>
 
           <form onSubmit={handleSubmit} className="text-left space-y-4 max-w-lg mx-auto">

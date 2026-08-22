@@ -15,7 +15,7 @@ const VideoSection = () => (
           Tecnología real, resultados reales
         </h2>
         <p className="text-lg mb-10" style={{ color: "#94a3b8" }}>
-          Descubrí cómo Génesis transforma negocios con inteligencia artificial
+          Descubre cómo Génesis transforma negocios con inteligencia artificial
         </p>
       </motion.div>
 
@@ -24,16 +24,15 @@ const VideoSection = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2 }}
-        className="rounded-xl overflow-hidden"
+        className="rounded-xl overflow-hidden mx-auto w-full max-w-[360px]"
         style={{
           border: "1px solid rgba(37, 99, 235, 0.3)",
           boxShadow: "0 0 40px rgba(37, 99, 235, 0.3)",
         }}
       >
-        {/* Fix: aspect-video = 16:9, correcto para desktop */}
         <iframe
-          className="w-full aspect-video bg-black"
-          src="https://www.youtube.com/embed/A28hpDj-kEo"
+          className="w-full aspect-[9/16] bg-black"
+          src="https://www.youtube.com/embed/hgtcjFovXlQ"
           title="Génesis en acción"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
